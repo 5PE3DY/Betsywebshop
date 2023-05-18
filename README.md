@@ -18,7 +18,7 @@ To use this webshop:<br>
 
 eg.	**SEARCH FUNCTION by TERM**
 	
-	search('Batavus Finez E-go')<br>
-	search('Batavus Finez E-go Power Exclusive')<br>
-	search('Batavus Altura E-go Power')<br>
-	search('Batavus Altura E-go Power Pro')search('Batavus Dinsdag E-go Classic')<br>
+	search('Batavus Finez E-go')
+	search('Batavus Finez E-go Power Exclusive')
+	search('Batavus Altura E-go Power')
+	search('Batavus Altura E-go Power Pro')search('Batavus Dinsdag E-go Classic')
