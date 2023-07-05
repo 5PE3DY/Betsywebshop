@@ -16,16 +16,16 @@ def populate_test_data():
     db.create_tables([User, Tag, Product, UserProduct, OrderTransaction])
 
     users = [
-        {'name': 'Henk',
+        {'name': 'Henk Janssens',
         'address': 'Belgie',
         'payment': 1234},
-        {'name': 'Bennie',
+        {'name': 'Bennie Jacobsen',
         'address': 'Amsterdam',
         'payment': 2345},
-        {'name': 'Sandra',
+        {'name': 'Sandra dweiltje',
         'address': 'Zwijndrecht',
         'payment': 3456},
-        {'name': 'Laura',
+        {'name': 'Laura van Hamelen',
         'address': 'Pannerden',
         'payment': 4567},
     ]
@@ -37,7 +37,7 @@ def populate_test_data():
             payment = user['payment']
         )
     
-    tags = ['Batavus Finez E-go', 'Batavus Finez E-go Power Exclusive', 'Batavus Altura E-go Power', 'Batavus Altura E-go Power Pro', 'Batavus Dinsdag E-go Classic']
+    tags = ['Basic', 'Exclusive', 'Power', 'Powerpro', ' Pleasure']
 
     for tag in tags:
         Tag.create(tag = tag)
@@ -82,8 +82,7 @@ def populate_test_data():
             description = product['description'],
             price = product['price'],
             quantity = product['quantity'],
-            tags = product['tags'],
-        )
+    )
     
     # User Products
     user_products = [

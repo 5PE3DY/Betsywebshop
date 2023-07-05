@@ -16,13 +16,15 @@ class User(BaseModel):
 class Tag(BaseModel):
     tag = CharField(unique = True)
 
+class TagProduct(BaseModel):
+    tag = ForeignKeyField(Tag)
+    Product = ForeignKeyField(tag)
 
 class Product(BaseModel):
     name = CharField()
     description = CharField()
     price = FloatField()
     quantity = IntegerField()
-    tags = ForeignKeyField(Tag, backref="tags_product")
 
 class UserProduct(BaseModel):
     owner = CharField()

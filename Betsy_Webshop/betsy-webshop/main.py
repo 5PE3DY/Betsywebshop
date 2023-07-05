@@ -28,7 +28,7 @@ def list_user_products(user_id):
 
 
 def list_products_per_tag(tag_id):
-    products_list_per_tag_query = Product.select().where(Product.tags == tag_id)
+    products_list_per_tag_query = TagProduct.select().where(tag_id == tag_id)
     if products_list_per_tag_query:
         print(f"\nProducts found by tag: '{tag_id}' ")
         for product in products_list_per_tag_query:
